@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secndaria: 'Montserrat', sans-serif;
+
+    --cor-principal: #000000;
+    --cor-secundaria: #DCD7C9;
+    --cor-terciaria: #105652;
+    --cor-hover: #3F4E4F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+    padding: 2% 0 0 10%;
+}
+
+.cabecalho__menu__link {
+    padding: 10px 20px;
+    font-family: var(--fonte-secndaria);
+    font-weight: 600;
+    font-size: 24px;
+    border: solid var(--cor-principal);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+.cabecalho__menu__link:hover {
+    background-color: var(--cor-terciaria);
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4% 10%;
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.destaque__titulo {
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-primaria);
+    font-size: 2.25rem;
+    font-weight: 400;
+}
+
+.apre__texto {
+    font-family: var(--fonte-secndaria);
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.home__imagem {
+    width: 50%;
+} 
+
+.rodape {
+    padding: 24px;
+    color: var(--cor-principal);
+    background-color: var(--cor-terciaria);
+    font-family: var(--fonte-secndaria);
+    font-size: 1.625rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+@media (max-width:1200px) {
+    .cabecalho__menu {
+        padding: 6% 0% 0% 0%;
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+    .home__imagem {
+        padding: 5%
+    }
+}
